@@ -1,4 +1,10 @@
+header{
+    background-color: aqua;
+}
 .o1{
-    color: aquamarine;
-    margin: auto;
+    color: greenyellow;
+    padding: 20px 10px 20px 10px;
+}
+body{
+    background-color: rgb(101, 255, 242);
 }
