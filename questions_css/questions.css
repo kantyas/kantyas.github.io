@@ -2,17 +2,17 @@
     display:none;
   }
   
-  label,
-  li{
+label,
+li{
     display:block;
     border-bottom:#fff 1px solid;
     font-family:sans-serif;
     letter-spacing:.05em;
     font-weight:bold;
-  }
+}
 
-  li::before,
-  label::before{
+li::before,
+label::before{
     content:"";
     display:block;
     position:absolute;
@@ -22,34 +22,34 @@
     border-top:#000 2px solid;
     border-left:#000 2px solid;
     transform:rotate(135deg);
-  }
-  input[type="checkbox"]{
+}
+input[type="checkbox"]{
     display:none;
-  }
-  label[for="menu"]{
+}
+label[for="menu"]{
     display:block;
-  }
-  label[for="menu2"]{
+}
+label[for="menu2"]{
     display:block;
-  }
-  label[for="menu"]::before{
+}
+label[for="menu"]::before{
     transform:rotate(225deg);
-  }
-  label[for="menu2"]::before{
+}
+label[for="menu2"]::before{
     transform:rotate(225deg);
-  }
-  #menu:checked + .dropdown{
+}
+#menu:checked + .dropdown{
     display:block;
-  }
-  #menu2:checked + .dropdown{
+}
+#menu2:checked + .dropdown{
     display:block;
-  }
-  .wrapper{
+}
+.wrapper{
     min-height: 100vh;
     position: relative;/*←相対位置*/
     padding-bottom: 120px;/*←footerの高さ*/
     box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
-  }
+}
 
 footer{
     width: 100%;
