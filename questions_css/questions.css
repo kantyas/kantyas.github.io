@@ -1,3 +1,7 @@
 .dropdown{
     display:none;
 }
+
+input[type="checkbox"]{
+    display:none;
+}
