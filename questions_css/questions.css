@@ -5,16 +5,10 @@
   label,
   li{
     display:block;
-    padding:2em;
-    background:gold;
     border-bottom:#fff 1px solid;
     font-family:sans-serif;
     letter-spacing:.05em;
     font-weight:bold;
-  }
-  li:hover,
-  label:hover{
-    background:orange;
   }
   li::before,
   label::before{
@@ -33,7 +27,6 @@
   }
   label[for="menu"]{
     display:block;
-    background:orange;
   }
   label[for="menu"]::before{
     transform:rotate(225deg);
