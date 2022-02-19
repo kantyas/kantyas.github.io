@@ -37,6 +37,6 @@ label[for="SS"]{
 label[for="SS"]::before{
   transform:rotate(225deg);
 }
-#menu:checked + .dropdown{
+#SS:checked + .dropdown{
   display:block;
 }
