@@ -62,7 +62,9 @@ footer{
     bottom: 0; /*下に固定*/
 }
 
-
+a {
+    color: blue;
+}
 
 h1 {
     position: relative;
