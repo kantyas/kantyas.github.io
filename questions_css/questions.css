@@ -32,16 +32,25 @@ label[for="menu"]{
 label[for="menu2"]{
     display:block;
 }
+label[for="math"]{
+    display:block;
+}
 label[for="menu"]::before{
     transform:rotate(225deg);
 }
 label[for="menu2"]::before{
     transform:rotate(225deg);
 }
+label[for="math"]::before{
+    transform:rotate(225deg);
+}
 #menu:checked + .dropdown{
     display:block;
 }
 #menu2:checked + .dropdown{
+    display:block;
+}
+#math:checked + .dropdown{
     display:block;
 }
 .wrapper{
