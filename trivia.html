@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <style type="text/css">
+        .dropdown{
+            display:none;
+        }
+  
+        label,
+        li{
+            display:block;
+            border-bottom:#fff 1px solid;
+            font-family:sans-serif;
+            letter-spacing:.05em;
+            font-weight:bold;
+        }
+
+        li::before,
+        label::before{
+            content:"";
+            display:block;
+            position:absolute;
+            right:5%;
+            width:.5em;
+            height:.5em;
+            border-top:#000 2px solid;
+            border-left:#000 2px solid;
+            transform:rotate(135deg);
+        }
+        input[type="checkbox"]{
+            display:none;
+        }
+        label[for="one"]{
+            display:block;
+        }
+        label[for="one"]::before{
+            transform:rotate(225deg);
+        }
+        #one:checked + .dropdown{
+            display:block;
+        }
+        </style>
+        <meta charset="utf-8">
+        <title>豆知識</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <label for="one">1週目~10週目</label>
+        <input type="checkbox" id="one">
+        <div class="dropdown">
+            <p>1週目 "漢字"は英語で"Chinese character"ともいわれる。</p>
+        </div>
+    </body>
+</html>
