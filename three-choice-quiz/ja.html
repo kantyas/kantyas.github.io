@@ -43,6 +43,120 @@
             background-color: #fff;
         }
 
+        .dropdown{
+            display:none;
+        }
+
+        label,
+        .dropdown li{
+            display:block;
+            border-bottom:#fff 0.5px solid;
+            font-family:sans-serif;
+            letter-spacing:.05em;
+            font-weight:bold;
+        }
+
+        .dropdown li::before,
+        label::before{
+            content:"";
+            display:block;
+            position:absolute;
+            right:7%;
+            width:.5em;
+            height:.5em;
+            border-top:#000 2px solid;
+            border-left:#000 2px solid;
+            transform:rotate(135deg);
+        }
+
+        input[type="checkbox"]{
+            display:none;
+        }
+             
+        /*国語*/
+
+        label[for="japanese"]{
+            display:block;
+        }
+
+        label[for="japanese"]::before{
+            transform:rotate(225deg);
+        }
+        
+        #japanese:checked + .dropdown{
+            display:block;
+        }  
+
+        /*漢字*/
+
+        label[for="kanji"]{
+            display:block;
+        }
+
+        label[for="kanji"]::before{
+            transform:rotate(225deg);
+        }
+
+        #kanji:checked + .dropdown{
+            display:block;
+        }
+
+        /*数学*/
+
+        label[for="math"]{
+            display:block;
+        }
+
+        label[for="math"]::before{
+            transform:rotate(225deg);
+        }
+
+        #math:checked + .dropdown{
+            display:block;
+        }
+
+        /*英語*/
+
+        label[for="english"]{
+            display:block;
+        }
+
+        label[for="english"]::before{
+            transform:rotate(225deg);
+        }
+
+        #english:checked + .dropdown{
+            display:block;
+        }
+
+        /*理科*/
+
+        label[for="science"]{
+            display:block;
+        }
+
+        label[for="science"]::before{
+            transform:rotate(225deg);
+        }
+
+        #science:checked + .dropdown{
+            display:block;
+        }
+
+        /*社会*/
+
+        label[for="society"]{
+            display:block;
+        }
+
+        label[for="society"]::before{
+            transform:rotate(225deg);
+        }
+
+        #society:checked + .dropdown{
+            display:block;
+        }
+
         .side-menu{
             width: 20%;
             padding: 10px;
@@ -107,6 +221,120 @@
             background-color: #fff;
         }
 
+        .dropdown{
+            display:none;
+        }
+
+        label,
+        .dropdown li{
+            display:block;
+            border-bottom:#fff 1px solid;
+            font-family:sans-serif;
+            letter-spacing:.05em;
+            font-weight:bold;
+        }
+
+        li::before,
+        label::before{
+            content:"";
+            display:block;
+            position:absolute;
+            right:10%;
+            width:.5em;
+            height:.5em;
+            border-top:#000 2px solid;
+            border-left:#000 2px solid;
+            transform:rotate(135deg);
+        }
+
+        input[type="checkbox"]{
+            display:none;
+        }
+             
+        /*国語*/
+
+        label[for="japanese"]{
+            display:block;
+        }
+
+        label[for="japanese"]::before{
+            transform:rotate(225deg);
+        }
+        
+        #japanese:checked + .dropdown{
+            display:block;
+        }  
+
+        /*漢字*/
+
+        label[for="kanji"]{
+            display:block;
+        }
+
+        label[for="kanji"]::before{
+            transform:rotate(225deg);
+        }
+
+        #kanji:checked + .dropdown{
+            display:block;
+        }
+
+        /*数学*/
+
+        label[for="math"]{
+            display:block;
+        }
+
+        label[for="math"]::before{
+            transform:rotate(225deg);
+        }
+
+        #math:checked + .dropdown{
+            display:block;
+        }
+
+        /*英語*/
+
+        label[for="english"]{
+            display:block;
+        }
+
+        label[for="english"]::before{
+            transform:rotate(225deg);
+        }
+
+        #english:checked + .dropdown{
+            display:block;
+        }
+
+        /*理科*/
+
+        label[for="science"]{
+            display:block;
+        }
+
+        label[for="science"]::before{
+            transform:rotate(225deg);
+        }
+
+        #science:checked + .dropdown{
+            display:block;
+        }
+
+        /*社会*/
+
+        label[for="society"]{
+            display:block;
+        }
+
+        label[for="society"]::before{
+            transform:rotate(225deg);
+        }
+
+        #society:checked + .dropdown{
+            display:block;
+        }
+
         .side-menu{
             width: 20%;
             padding: 10px;
@@ -148,9 +376,38 @@
             <div class="container">
                 <div class="side-menu">
                     サイドメニュー
+                    <hr>
                 </div>
                 <div class="main-contents">
-                    開発中です。
+                    <label for="japanese">国語</label> 
+                    <input type="checkbox" id="japanese">
+                    <div class="dropdown">
+                        <label for="kanji">漢字</label>
+                        <input type="checkbox" id="kanji">
+                        <div class="dropdown">
+                            <a>テスト</a>
+                        </div>
+                    </div>
+                    <label for="math">数学</label> 
+                    <input type="checkbox" id="math">
+                    <div class="dropdown">
+                        テスト
+                    </div>
+                    <label for="english">英語</label> 
+                    <input type="checkbox" id="english">
+                    <div class="dropdown">
+                        テスト
+                    </div>
+                    <label for="science">理科</label> 
+                    <input type="checkbox" id="science">
+                    <div class="dropdown">
+                        テスト
+                    </div>
+                    <label for="society">社会</label> 
+                    <input type="checkbox" id="society">
+                    <div class="dropdown">
+                        テスト
+                    </div>
                 </div>
             </div>
         </div>
