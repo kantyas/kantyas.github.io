@@ -1,0 +1,103 @@
+.header{
+    background-color: #26d0c9;
+    color: #fff;
+    height: 90px;
+}
+
+.header-logo{
+    font-size: 36px;
+    float: left;
+    padding: 20px 40px;
+}
+
+.header-list li{
+    list-style: none;
+    float: left;
+    padding: 33px 20px;
+    display: none;
+}
+
+.main{
+    background-color: rgb(228, 228, 228);
+    height: 600px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-contents{
+    width: 95%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.dropdown{
+    display:none;
+}
+
+label,
+.dropdown li{
+    display:block;
+    border-bottom:#fff 1px solid;
+    font-family:sans-serif;
+    letter-spacing:.05em;
+    font-weight:bold;
+}
+
+li::before,
+label::before{
+    content:"";
+    display:block;
+    position:absolute;
+    right:10%;
+    width:.5em;
+    height:.5em;
+    border-top:#000 2px solid;
+    border-left:#000 2px solid;
+    transform:rotate(135deg);
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+     
+/*国語*/
+
+label[for="japanese"]{
+    display:block;
+}
+
+label[for="japanese"]::before{
+    transform:rotate(225deg);
+}
+
+#japanese:checked + .dropdown{
+    display:block;
+}
+
+.side-menu{
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    display: none;
+}
+
+.footer{
+    background-color: rgb(241, 240, 240);
+    height: 120px;
+    padding: 40px;
+}
+
+.footer-logo{
+    font-family: "Avenir Next";
+    font-size: 32px;
+    float: left;
+}
+
+.footer-list li{
+    display: none;
+}
